@@ -24,5 +24,17 @@ namespace eCommerce_API.Database
         public DbSet<Departamento> Departamentos { get; set; }
         public DbSet<EnderecoEntrega> EnderecosEntrega { get; set; }
         public DbSet<Contato> Contatos { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Departamento>().HasData(
+                new Departamento { Id = 1, Nome = "Moda" },
+                new Departamento { Id = 2, Nome = "Informática" },
+                new Departamento { Id = 3, Nome = "Eletrodomésticos" },
+                new Departamento { Id = 4, Nome = "Ninja" }
+            );
+
+            base.OnModelCreating(modelBuilder);
+        }
     }
 }
