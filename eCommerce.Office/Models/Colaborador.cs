@@ -7,6 +7,11 @@ public class Colaborador
 
     public ICollection<ColaboradorSetor>? ColaboradorSetor { get; set; }
 
+    /* Posso acessar diereto os veículos */
     public ICollection<Veiculo>? Veiculos { get; set; }
+
+    /* Também possuo acesso a tabela de vínculo */
+    public ICollection<ColaboradorVeiculo>? ColaboradoresVeiculos { get; set; }
+
     public ICollection<Turma>? Turmas { get; set; }
 }
