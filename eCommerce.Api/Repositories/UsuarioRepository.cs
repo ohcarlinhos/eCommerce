@@ -1,7 +1,7 @@
 ﻿using eCommerce.Models;
-using eCommerce_API.Database;
+using eCommerce.Api.Database;
 
-namespace eCommerce_API.Repositories
+namespace eCommerce.Api.Repositories
 {
     public class UsuarioRepository : IUsuarioRepository
     {

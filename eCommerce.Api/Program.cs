@@ -1,7 +1,7 @@
 global using eCommerce.Models;
 
-using eCommerce_API.Database;
-using eCommerce_API.Repositories;
+using eCommerce.Api.Database;
+using eCommerce.Api.Repositories;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);

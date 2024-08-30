@@ -1,6 +1,6 @@
 ﻿using eCommerce.Models;
 
-namespace eCommerce_API.Repositories
+namespace eCommerce.Api.Repositories
 {
     public interface IUsuarioRepository
     {

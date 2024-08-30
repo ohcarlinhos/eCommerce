@@ -1,9 +1,9 @@
 ﻿using eCommerce.Models;
-using eCommerce_API.Repositories;
+using eCommerce.Api.Repositories;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
-namespace eCommerce_API.Controllers
+namespace eCommerce.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController] // comportamentos pre configurados para API.

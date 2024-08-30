@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace eCommerce_API.Database
+namespace eCommerce.Api.Database
 {
     public class eCommerceContext: DbContext
     {

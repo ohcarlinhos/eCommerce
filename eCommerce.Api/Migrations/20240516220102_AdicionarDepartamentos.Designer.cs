@@ -5,11 +5,11 @@ using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using eCommerce_API.Database;
+using eCommerce.Api.Database;
 
 #nullable disable
 
-namespace eCommerce_API.Migrations
+namespace eCommerce.Api.Migrations
 {
     [DbContext(typeof(eCommerceContext))]
     [Migration("20240516220102_AdicionarDepartamentos")]

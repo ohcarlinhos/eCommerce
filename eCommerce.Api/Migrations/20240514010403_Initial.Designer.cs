@@ -3,17 +3,19 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using eCommerce_API.Database;
+using eCommerce.Api.Database;
 
 #nullable disable
 
-namespace eCommerce_API.Migrations
+namespace eCommerce.Api.Migrations
 {
     [DbContext(typeof(eCommerceContext))]
-    partial class eCommerceContextModelSnapshot : ModelSnapshot
+    [Migration("20240514010403_Initial")]
+    partial class Initial
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -77,28 +79,6 @@ namespace eCommerce_API.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Departamentos");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Nome = "Moda"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Nome = "Informática"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Nome = "Eletrodomésticos"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Nome = "Ninja"
-                        });
                 });
 
             modelBuilder.Entity("eCommerce.Models.EnderecoEntrega", b =>
