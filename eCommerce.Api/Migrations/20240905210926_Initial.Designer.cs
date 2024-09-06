@@ -12,8 +12,8 @@ using eCommerce.Api.Database;
 namespace eCommerce.Api.Migrations
 {
     [DbContext(typeof(eCommerceContext))]
-    [Migration("20240516220102_AdicionarDepartamentos")]
-    partial class AdicionarDepartamentos
+    [Migration("20240905210926_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
